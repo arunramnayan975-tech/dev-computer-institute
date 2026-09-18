@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Computer Institute — Practical Computer & IT Training</title>
+  <meta name="description" content="Dev Computer Institute offers practical, hands-on computer and IT training designed to build real, job-ready skills. Explore our courses and start learning today.">
+
+  <!-- Google Fonts: Space Grotesk (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ SKIP LINK (ACCESSIBILITY) ============ -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Dev Computer Institute home">
+       <span class="brand-mark" >
+        <img src="images/Pasted.png" alt="Dev computer institute logo" style= "width:42px; height:42px">
+            <path d="M9 12L13 16L9 20" stroke="var(--color-amber)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 20H23" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">Dev Computer Institute</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#courses" class="nav-link">Courses</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-small">Enquire Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu panel -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#courses" class="mobile-nav-link">Courses</a></li>
+        <li><a href="#features" class="mobile-nav-link">Features</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li><a href="#contact" class="btn btn-primary btn-full">Enquire Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Dev Computer Institute</p>
+          <h1 class="hero-headline">
+            Learn computer skills the way employers actually test them: hands-on.
+          </h1>
+          <p class="hero-sub">
+            Dev Computer Institute teaches practical computer and IT skills through guided projects,
+            real practice, and structured courses — built for people who want to learn by doing,
+            not just by watching.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#courses" class="btn btn-primary">Explore Courses</a>
+            <a href="#contact" class="btn btn-outline">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Original circuit-node motif: represents systems/logic, not a stock photo -->
+          <svg id="hero-svg" viewBox="0 0 480 480" width="100%" height="100%">
+            <g class="circuit-lines">
+              <path d="M60 380 L60 260 L160 260 L160 160" />
+              <path d="M60 260 L160 260" />
+              <path d="M160 160 L280 160 L280 90" />
+              <path d="M280 160 L380 160 L380 220" />
+              <path d="M160 260 L240 260 L240 340 L340 340" />
+              <path d="M340 340 L340 400" />
+              <path d="M240 260 L240 200" />
+              <path d="M380 220 L430 220" />
+            </g>
+            <g class="circuit-nodes">
+              <circle cx="60" cy="380" r="7" />
+              <circle cx="60" cy="260" r="7" />
+              <circle cx="160" cy="260" r="9" />
+              <circle cx="160" cy="160" r="7" />
+              <circle cx="280" cy="160" r="9" />
+              <circle cx="280" cy="90" r="7" />
+              <circle cx="380" cy="160" r="7" />
+              <circle cx="380" cy="220" r="9" />
+              <circle cx="240" cy="260" r="7" />
+              <circle cx="240" cy="200" r="6" />
+              <circle cx="240" cy="340" r="7" />
+              <circle cx="340" cy="340" r="9" />
+              <circle cx="340" cy="400" r="6" />
+              <circle cx="430" cy="220" r="6" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <div class="about-copy">
+          <p class="section-label">About the institute</p>
+          <h2 class="section-heading">Built around practical, guided learning</h2>
+          <p class="about-text">
+           Dev Computer Institute provides computer education and practical training for learners who want to develop useful computer and digital skills. The institute offers courses covering computer fundamentals, data entry, DTP, Tally, web designing, Advanced Excel, and typing.
+          </p>
+          <p class="about-text">
+            Our approach focuses on developing practical knowledge through structured courses, guided learning, and regular practice.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar">
+              <h3 class="pillar-title">Mission</h3>
+              <p class="pillar-text">
+                To provide practical and accessible computer education that helps learners develop useful skills and confidence.
+              </p>
+            </div>
+            <div class="pillar">
+              <h3 class="pillar-title">Vision</h3>
+              <p class="pillar-text">
+                To help learners build relevant computer skills for education, employment, and professional growth.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <h3 class="highlight-title">Practical, project-first</h3>
+            <p class="highlight-text">Courses are structured around building things, not just watching demonstrations.</p>
+          </div>
+          <div class="highlight-card">
+            <h3 class="highlight-title">Small, focused batches</h3>
+            <p class="highlight-text">
+              Structured courses with guided practice; contact the institute for current batch details.
+            </p>
+          </div>
+          <div class="highlight-card">
+            <h3 class="highlight-title">Clear skill progression</h3>
+            <p class="highlight-text">Each course is organized in stages, from fundamentals to applied practice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COURSES SECTION ============ -->
+    <section class="courses" id="courses">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-label">Courses</p>
+          <h2 class="section-heading">Choose a path and start building skills</h2>
+          <p class="section-desc">
+            A look at the courses currently offered at Dev Computer Institute.
+          </p>
+        </div>
+
+        <div class="course-grid">
+
+          <article class="course-card">
+            <div class="course-card-top">
+              <h3 class="course-title">Basic / Data Entry</h3>
+              <span class="course-duration">4–6 months</span>
+            </div>
+            <p class="course-desc">Build essential computer skills and develop practical knowledge for data entry and everyday computer work.</p>
+            <a href="#contact" class="btn btn-outline btn-small course-btn">Enquire Now</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card-top">
+              <h3 class="course-title">Diploma with DTP &amp; Tally</h3>
+              <span class="course-duration">12 months</span>
+            </div>
+            <p class="course-desc">A comprehensive diploma program combining desktop publishing and accounting-related computer skills.</p>
+            <a href="#contact" class="btn btn-outline btn-small course-btn">Enquire Now</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card-top">
+              <h3 class="course-title">Diploma with DTP &amp; Web Designing</h3>
+              <span class="course-duration">12 months</span>
+            </div>
+            <p class="course-desc">A diploma program covering desktop publishing and web designing fundamentals.</p>
+            <a href="#contact" class="btn btn-outline btn-small course-btn">Enquire Now</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card-top">
+              <h3 class="course-title">Tally</h3>
+              <span class="course-duration">3–4 months</span>
+            </div>
+            <p class="course-desc">Develop practical knowledge of Tally and computer-based accounting workflows.</p>
+            <a href="#contact" class="btn btn-outline btn-small course-btn">Enquire Now</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card-top">
+              <h3 class="course-title">Web Designing</h3>
+              <span class="course-duration">4 months</span>
+            </div>
+            <p class="course-desc">Learn the fundamentals of designing and creating websites through practical computer-based training.</p>
+            <a href="#contact" class="btn btn-outline btn-small course-btn">Enquire Now</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card-top">
+              <h3 class="course-title">Basic &amp; Tally</h3>
+              <span class="course-duration">7–8 months</span>
+            </div>
+            <p class="course-desc">Combine essential computer skills with practical Tally training in a structured course.</p>
+            <a href="#contact" class="btn btn-outline btn-small course-btn">Enquire Now</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card-top">
+              <h3 class="course-title">Advanced Excel</h3>
+              <span class="course-duration">6 months</span>
+            </div>
+            <p class="course-desc">Develop advanced skills for working efficiently with spreadsheets and Excel-based tasks.</p>
+            <a href="#contact" class="btn btn-outline btn-small course-btn">Enquire Now</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card-top">
+              <h3 class="course-title">Advanced Diploma Course</h3>
+              <span class="course-duration">12 months</span>
+            </div>
+            <p class="course-desc">A comprehensive diploma-level program designed to develop a broader range of computer skills.</p>
+            <a href="#contact" class="btn btn-outline btn-small course-btn">Enquire Now</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card-top">
+              <h3 class="course-title">Hindi &amp; English Numeric Typing</h3>
+              <span class="course-duration">Duration not specified</span>
+            </div>
+            <p class="course-desc">Improve typing skills for Hindi and English text along with numeric data entry.</p>
+            <a href="#contact" class="btn btn-outline btn-small course-btn">Enquire Now</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US / FEATURES ============ -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-label">Why choose us</p>
+          <h2 class="section-heading">A learning approach built around doing the work</h2>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="28" height="28"><path d="M8 30L18 10L22 18L32 8" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature-title">Practical Learning</h3>
+            <p class="feature-text">Coursework is built around exercises and projects, not just theory.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="28" height="28"><circle cx="20" cy="14" r="6" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M8 32C8 24 13 20 20 20C27 20 32 24 32 32" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-title">Experienced Trainers</h3>
+            <p class="feature-text">
+              Learners receive guided instruction and practical support throughout their coursework.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="28" height="28"><rect x="7" y="10" width="26" height="20" rx="2" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M13 30V33M27 30V33M7 17H33" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-title">Hands-on Projects</h3>
+            <p class="feature-text">Every course includes practical work you build and keep, not just notes.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="28" height="28"><path d="M20 6L24 16L34 17L26 24L28 34L20 29L12 34L14 24L6 17L16 16L20 6Z" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature-title">Career-Oriented Skills</h3>
+            <p class="feature-text">Courses focus on skills that map to how these tools are used in real work.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="28" height="28"><path d="M20 33C20 33 7 25 7 15.5C7 10.5 11 7 15.5 7C17.7 7 19.4 8 20 9.3C20.6 8 22.3 7 24.5 7C29 7 33 10.5 33 15.5C33 25 20 33 20 33Z" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature-title">Supportive Learning Environment</h3>
+            <p class="feature-text">Learners get guided support while working through course material and projects.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="28" height="28"><rect x="6" y="8" width="28" height="18" rx="2" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M14 32H26M20 26V32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-title">Modern Learning Approach</h3>
+            <p class="feature-text">Course material is kept current with how these tools are actually used today.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY SECTION ============ -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-label">Gallery</p>
+          <h2 class="section-heading">Inside the institute</h2>
+          <p class="section-desc">
+            A glimpse of learning and training at Dev Computer Institute.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="images/classroom-training.jpg" alt="Students attending a computer training session at Dev Computer Institute" loading="lazy">
+            <figcaption>Computer training session</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/first-anniversary.jpg" alt="Dev Computer Institute first anniversary cake featuring the institute logo" loading="lazy">
+            <figcaption>First anniversary celebration</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/educational-trip.jpg" alt="A group of learners and staff during an institute educational outing" loading="lazy">
+            <figcaption>Learners and staff outing</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/practical-learning.jpg" alt="Learner working on practical coursework at a desk" loading="lazy">
+            <figcaption>Practical learning</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/classroom-2.jpg" alt="Students working at computers during a classroom session" loading="lazy">
+            <figcaption>Hands-on classroom practice</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ SECTION ============ -->
+    <section class="faq" id="faq">
+      <div class="container faq-inner">
+        <div class="section-intro">
+          <p class="section-label">FAQ</p>
+          <h2 class="section-heading">Common questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Who can join these courses?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>Courses are generally designed for beginners as well as learners looking to build on existing knowledge. Specific prerequisites, if any, are listed on each course.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do I need prior computer knowledge to start?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>Most foundational courses do not require prior experience. Course-specific requirements are noted where applicable.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is the class format — online, offline, or both?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>Please contact the institute to confirm the current class format and schedule.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Will I receive a certificate after completing a course?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>Please contact the institute to confirm whether a certificate is provided for your selected course.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How are the courses structured?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>Courses are typically organized into stages that build from fundamentals toward applied, project-based practice.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I enroll or ask a question before enrolling?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>Use the enquiry form in the Contact section, or reach out using the contact details listed there.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / ENQUIRY SECTION ============ -->
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-info">
+          <p class="section-label">Contact</p>
+          <h2 class="section-heading">Get in touch</h2>
+          <p class="section-desc">
+            Fill out the form and we'll get back to you, or reach out directly using the details below.
+          </p>
+
+          <ul class="contact-details">
+            <li>
+              <span class="contact-label">Address</span>
+              <span class="contact-value">A/4, Shiv Mandir Marg, near Pancham Sweets, Badli Mohalla, Delhi – 110042</span>
+            </li>
+            <li>
+              <span class="contact-label">Phone</span>
+              <a class="contact-value" href="tel:+918287441374">+91 82874 41374</a>
+            </li>
+            <li>
+              <span class="contact-label">Email</span>
+              <a class="contact-value" href="mailto:devrajsingh25802580@gmail.com">devrajsingh25802580@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">Working hours</span>
+              <span class="contact-value">Monday to Friday, 6:00 PM – 9:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="enquiry-form" id="enquiry-form" novalidate>
+          <p class="form-note">
+            Send your enquiry directly to the institute. If the online form is unavailable, WhatsApp will open with your enquiry pre-filled.
+          </p>
+
+          <div class="form-group">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <span class="form-error" id="error-name"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <span class="form-error" id="error-email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            <span class="form-error" id="error-phone"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="course">Course of interest</label>
+            <select id="course" name="course" required>
+              <option value="" disabled selected>Select a course</option>
+              <option value="basic-data-entry">Basic / Data Entry</option>
+              <option value="diploma-dtp-tally">Diploma with DTP &amp; Tally</option>
+              <option value="diploma-dtp-web">Diploma with DTP &amp; Web Designing</option>
+              <option value="tally">Tally</option>
+              <option value="web-designing">Web Designing</option>
+              <option value="basic-tally">Basic &amp; Tally</option>
+              <option value="advanced-excel">Advanced Excel</option>
+              <option value="advanced-diploma">Advanced Diploma Course</option>
+              <option value="typing">Hindi &amp; English Numeric Typing</option>
+              <option value="other">Other / Not sure yet</option>
+            </select>
+            <span class="form-error" id="error-course"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="form-error" id="error-message"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Submit Enquiry</button>
+
+          <div class="form-success" id="form-success" role="status" aria-live="polite">
+            Thank you — your enquiry has been received.
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name footer-brand-name">Dev Computer Institute</span>
+        <p class="footer-tagline">Practical computer and IT skills, built through real practice.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Courses</h3>
+        <ul class="footer-list">
+          <li><a href="#courses">Basic / Data Entry</a></li>
+          <li><a href="#courses">Diploma with DTP &amp; Tally</a></li>
+          <li><a href="#courses">Diploma with DTP &amp; Web Designing</a></li>
+          <li><a href="#courses">Tally</a></li>
+          <li><a href="#courses">Web Designing</a></li>
+          <li><a href="#courses">Basic &amp; Tally</a></li>
+          <li><a href="#courses">Advanced Excel</a></li>
+          <li><a href="#courses">Advanced Diploma Course</a></li>
+          <li><a href="#courses">Hindi &amp; English Numeric Typing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Contact</h3>
+        <ul class="footer-list">
+          <li>A/4, Shiv Mandir Marg, Pancham Sweets, Badli, Delhi – 110042</li>
+          <li><a href="tel:+918287441374">+91 82874 41374</a></li>
+          <li><a href="mailto:devrajsingh25802580@gmail.com">devrajsingh25802580@gmail.com</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="https://wa.me/918287441374" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+          <a href="tel:+918287441374" aria-label="Call the institute">☎</a>
+          <a href="mailto:devrajsingh25802580@gmail.com" aria-label="Email the institute">@</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Dev Computer Institute. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP BUTTON ============ -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

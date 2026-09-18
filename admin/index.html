@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Dev Computer Institute</title>
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <main class="admin-shell">
+    <section id="login-view" class="panel narrow">
+      <h1>Dev Computer Institute</h1>
+      <p class="muted">Administrator sign in</p>
+      <form id="login-form">
+        <label>Email<input id="login-email" type="email" autocomplete="username" required></label>
+        <label>Password<input id="login-password" type="password" autocomplete="current-password" required></label>
+        <button type="submit">Sign in</button>
+        <p id="login-error" class="error" role="alert"></p>
+      </form>
+    </section>
+
+    <section id="dashboard-view" hidden>
+      <header class="topbar">
+        <div>
+          <h1>Institute Admin</h1>
+          <p id="admin-name" class="muted"></p>
+        </div>
+        <button id="logout-btn" class="secondary">Log out</button>
+      </header>
+
+      <div class="stats">
+        <div class="stat"><strong id="new-count">0</strong><span>New enquiries</span></div>
+        <div class="stat"><strong id="total-count">0</strong><span>Total enquiries</span></div>
+        <div class="stat"><strong id="course-count">0</strong><span>Active courses</span></div>
+      </div>
+
+      <section class="panel">
+        <div class="section-head"><h2>Enquiries</h2><button id="refresh-enquiries" class="secondary">Refresh</button></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Name</th><th>Contact</th><th>Course</th><th>Message</th><th>Status</th><th>Date</th></tr></thead>
+            <tbody id="enquiries-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head"><h2>Courses</h2><button id="refresh-courses" class="secondary">Refresh</button></div>
+        <form id="course-form" class="course-form">
+          <input type="hidden" id="course-id">
+          <input id="course-name" placeholder="Course name" required>
+          <input id="course-slug" placeholder="course-slug" required>
+          <input id="course-duration" placeholder="Duration">
+          <textarea id="course-description" placeholder="Description" required></textarea>
+          <select id="course-status"><option value="active">Active</option><option value="inactive">Inactive</option></select>
+          <div><button type="submit">Save course</button> <button type="button" id="cancel-course" class="secondary">Clear</button></div>
+        </form>
+        <div id="courses-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Contact information</h2>
+        <form id="settings-form">
+          <label>Address<textarea id="setting-address"></textarea></label>
+          <label>Phone<input id="setting-phone"></label>
+          <label>Email<input id="setting-email" type="email"></label>
+          <label>Working hours<input id="setting-hours"></label>
+          <button type="submit">Save contact information</button>
+        </form>
+      </section>
+
+      <p id="toast" class="toast" role="status"></p>
+    </section>
+  </main>
+  <script src="/admin/admin.js"></script>
+</body>
+</html>
